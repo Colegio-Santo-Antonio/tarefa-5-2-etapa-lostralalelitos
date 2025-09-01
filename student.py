@@ -2,11 +2,17 @@
 numero = input()
 lista = [int(digito) for digito in str(numero)]
 invertida = lista(::-1)
-numeros_posicoes_impares = invertida[1::2]
-sum(numeros_posicoes_impares)
 
 
+npi = invertida[1::2]
+
+npp = invertida[::2]
+l3 = npi + npp + npp
+
+divisor = 10
+if l3 % divisor == 0:
+    print("Cartão Válido")
+else:
+    print("Cartão Inválido")
 
 
-
-# print("Cartão válido")  ou  print("Cartão inválido")
