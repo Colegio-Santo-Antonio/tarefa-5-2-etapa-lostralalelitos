@@ -8,7 +8,7 @@ npi = invertida[1::2]
 
 npp = invertida[::2]
 
-a = sum(npi) + sum(npp)
+a = sum(npi) + sum(npp) + sum(npp)
 
 divisor = 10
 if a % divisor == 0:
