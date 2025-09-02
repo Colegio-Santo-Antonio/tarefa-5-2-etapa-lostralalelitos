@@ -11,8 +11,8 @@ l3 = npi + npp + npp
 
 divisor = 10
 if l3 % divisor == 0:
-    print("Cartão Válido")
+    print("Cartão válido")
 else:
-    print("Cartão Inválido")
+    print("Cartão inválido")
 
 
