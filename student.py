@@ -7,8 +7,17 @@ invertida = lista(::-1)
 npi = invertida[1::2]
 
 npp = invertida[::2]
+npp = [a*2 for a in npp:]
 
-a = sum(npi) + sum(npp) + sum(npp)
+
+for i in npp:
+    if 10 <= i*2 and i*2 <= 18:
+        i = str(i)
+        i = sum([int(n) for n in i])
+    else:
+        i = i
+
+a = sum(npi) + sum(npp)
 
 divisor = 10
 if a % divisor == 0:
