@@ -7,7 +7,7 @@ invertida = lista(::-1)
 npi = invertida[1::2]
 
 npp = invertida[::2]
-npp = [a*2 for a in npp:]
+npp = [a*2 for a in npp]
 
 
 for i in npp:
