@@ -11,7 +11,7 @@ npp = [a*2 for a in npp:]
 
 
 for i in npp:
-    if 10 <= i*2 and i*2 <= 18:
+    if 10 <= i and i <= 18:
         i = str(i)
         i = sum([int(n) for n in i])
     else:
