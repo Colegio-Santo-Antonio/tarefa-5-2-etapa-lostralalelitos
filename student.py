@@ -17,12 +17,13 @@ for i in npp:
     else:
         i = i
 
-a = sum(npi) + sum(npp)
+p = sum(npi) + sum(npp)
 
 divisor = 10
-if a % divisor == 0:
-    print("Cartão inválido")
-else:
+
+if p % divisor == 0:
     print("Cartão válido")
+else:
+    print("Cartão inválido")
 
 
