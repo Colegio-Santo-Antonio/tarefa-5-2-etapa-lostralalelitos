@@ -1,29 +1,18 @@
-# Leia uma linha com o número do cartão
 numero = input()
 lista = [int(digito) for digito in numero]
 invertida = lista[::-1]
 
-
 npi = invertida[1::2]
-
 npp = invertida[::2]
-npp = [a*2 for a in npp]
 
 
-for i in npp:
-    if 10 <= i and i <= 18:
-        i = str(i)
-        i = sum([int(n) for n in i])
-    else:
-        i = i
+npp = [a*2 if a*2 <= 9 else a*2 - 9 for a in npp]
 
 p = sum(npi) + sum(npp)
 
-divisor = 10
-
-if p % divisor == 0:
+if p % 10 == 0:
     print("Cartão válido")
 else:
     print("Cartão inválido")
 
-
+# Feito por Mateus Loures do 1ºF
