@@ -1,7 +1,7 @@
 numero = input()
-im = [int(i) for i in numero[-1::2]] 
+im = [int(w) for w in numero[-1::-2]] 
 pa = []
-for i in numero[=2::2]:
+for i in numero[-2::-2]:
     z = int(i)
     if 2*z < 10:
         pa.append(2*z)
